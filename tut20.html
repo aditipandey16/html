@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: #cb847b;
+        }
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgb(83, 8, 73);
+            /* we can set padding for top,bottom,left right like this */
+            /* padding-top: 99px;
+            padding-bottom: 99px; 
+            padding-right: 50px;
+            padding-left: 50px; */
+            /* padding=top right bottom left; */
+            /* padding:99px 50px 99px 50px; */
+            padding:34px 19px;/* padding:y(top/bottom) x(left/right) */
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, in eligendi. Nostrum commodi sunt, illo quisquam expedita et doloremque doloribus aliquam quia dolore culpa aliquid harum, a ad praesentium inventore aut molestiae, corporis qui soluta exercitationem recusandae! Placeat, optio repellendus?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, in eligendi. Nostrum commodi sunt, illo quisquam expedita et doloremque doloribus aliquam quia dolore culpa aliquid harum, a ad praesentium inventore aut molestiae, corporis qui soluta exercitationem recusandae! Placeat, optio repellendus?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, in eligendi. Nostrum commodi sunt, illo quisquam expedita et doloremque doloribus aliquam quia dolore culpa aliquid harum, a ad praesentium inventore aut molestiae, corporis qui soluta exercitationem recusandae! Placeat, optio repellendus?</p>
+    </div>
+</body>
+</html>
