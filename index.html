@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <style>
+        body{
+            background: url('img/bf.webp');
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-size: cover;
+
+        }
+        .left{
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            
+        }
+        .left img{
+            width:100px;
+            filter: invert(100%);
+            
+        }
+        .left div{
+            line-height: 19px;
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            font-style: italic;
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a title{
+            color: aqua;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(8, 6, 6);
+        }
+        .right{
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+        .logininbox{
+            width: 320px;
+            height: 420px;
+            background: #000;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 20px;
+
+        }
+        .logininbox img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            margin-left: 25%;
+        }
+        h1{
+            margin: 0px;
+            padding: 0 0 2px;
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .logininbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        .logininbox input{
+            width: 100%;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .logininbox input[type="text"],input[type="password"]{
+            border: none;
+            border-bottom: 0.5px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+        .logininbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: white;
+            color: black;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .logininbox input[type="submit"]:hover{
+            cursor: pointer;
+            color: rgb(59, 30, 30);
+            background: rgb(119, 111, 111);
+        }
+        .logininbox a{
+            font-style: italic;
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: grey;
+        }
+        .logininbox a:hover{
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="class">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div class="line">PWD</div>
+        </div>
+        <div class="right" id="blur">
+            <ul class="navbar">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#" title="+91 9310213824">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="logininbox">
+        <img src="img/login.png" alt="">
+        <h1>
+            Login Here
+        </h1>
+        <form action="backend.php">
+            <p>Username</p>
+            <input type="text" name="" id="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" id="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login"><br>
+            <a href="#">Forgot Password?</a><br>
+            <a href="#">New User? Register Now</a><br>
+
+        </form>
+
+    </div>
+</body>
+</html>
